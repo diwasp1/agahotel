@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hotel Brand In USA</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+		/>
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+	<body>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+				>&times;</a
+			>
+			<a href="#">Reservation</a>
+			<a href="#">My Booking</a>
+			<a href="#">FAQ</a>
+			<a href="#">Brands</a>
+			<a href="#">Destination</a>
+			<a href="">AGA Meetings</a>
+			<a href="">Deals</a>
+		</div>
+
+		<div id="main">
+			<div class="banner">
+				<div class="navbar-wrapper">
+					<div class="primary-navbar container">
+						<div class="logo-container">
+							<img src="assets/images/logo2.png" class="img-fluid" alt="" />
+						</div>
+						<div class="primary-content">
+							<ul class="first-navbar-wrapper">
+								<li>
+									<i class="fa fa-phone"></i>
+									<select name="" id="">
+										<option value="">+1 (415) - 555 2671 </option>
+										<option value="">+1 (415) - 554 2661 </option>
+									</select>
+								</li>
+								<li>
+									<a href="">Bookings</a>
+								</li>
+								<li>
+									<a href="">FAQ</a>
+								</li>
+								<li>
+									<select name="" id="">
+										<option value="">English</option>
+										<option value="">German</option>
+									</select>
+								</li>
+							</ul>
+							<ul class="second-navbar-wrapper">
+								<li>
+									<a href="">
+										Brands
+									</a>
+								</li>
+
+								<li>
+									<a href="">Destination</a>
+								</li>
+								<li>
+									<a href="">
+										Deals
+									</a>
+								</li>
+								<li>
+									<a href="">
+										About
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Rewards
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="bars d-block d-md-none">
+							<span onclick="openNav()"><i class="fa fa-bars"></i></span>
+						</div>
+					</div>
+				</div>
+				<div class="slider-wrapper">
+					<div class="slider">
+						<div class="img-container">
+							<img src="assets/images/banner4.jpg" class="img-fluid" alt="" />
+						</div>
+						<div class="overlay-container">
+							<div class="container">
+								<div class="title">We Care About You</div>
+								<div class="subtitle">
+									Peace of mind and greater travel flexibility are yours with
+									our extended cancellation policy.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slider">
+						<div class="img-container">
+							<img src="assets/images/banner.jpg" class="img-fluid" alt="" />
+						</div>
+						<div class="overlay-container">
+							<div class="container">
+								<div class="title">We Care About You</div>
+								<div class="subtitle">
+									Peace of mind and greater travel flexibility are yours with
+									our extended cancellation policy.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slider">
+						<div class="img-container">
+							<img src="assets/images/banner3.jpg" class="img-fluid" alt="" />
+						</div>
+						<div class="overlay-container">
+							<div class="container">
+								<div class="title">We Care About You</div>
+								<div class="subtitle">
+									Peace of mind and greater travel flexibility are yours with
+									our extended cancellation policy.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="search-wrapper" id="searchBar">
+					<form class="container" action="hotel.html">
+						<div class="bottom-search-bar d-none d-lg-flex">
+							<div class="item">
+								<span><i class="fa fa-search"></i></span>
+								<input type="text" placeholder="Find a Hotel" />
+								<div class="item-sup">
+									Destination
+								</div>
+							</div>
+							<div class="item">
+								<span><i class="fa fa-calendar"></i></span>
+								<input type="date" placeholder="Find a Hotel" />
+								<div class="item-sup">
+									Check- in Check-out
+								</div>
+							</div>
+							<div class="item">
+								<span><i class="fa fa-users"></i></span>
+								<input type="text" placeholder="1 Room 1 Adult" />
+								<div class="item-sup">
+									Occupancy
+								</div>
+							</div>
+							<div class="item">
+								<span><i class="fa fa-search"></i></span>
+								<select>
+									<option value="">Lowest Available Rate</option>
+									<option value="">Promotional Code</option>
+									<option value="">Senior Citizen Rate</option>
+								</select>
+								<div class="item-sup">
+									Special rates
+								</div>
+							</div>
+							<div class="button-container">
+								<button>
+									Search
+								</button>
+							</div>
+						</div>
+						<div
+							class="bottom-search-bar-mobile d-flex d-lg-none"
+							data-toggle="modal"
+							data-target="#myModal"
+						>
+							<span>Where to</span>
+							<span><i class="fa fa-ellipsis-v"></i></span>
+						</div>
+						<div class="modal" id="myModal">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title">Where to</h5>
+										<button type="button" class="close" data-dismiss="modal">
+											&times;
+										</button>
+									</div>
+
+									<div class="modal-body">
+										<div class="bottom-search-bar">
+											<div class="item">
+												<span><i class="fa fa-search"></i></span>
+												<input type="text" placeholder="Find a Hotel" />
+												<div class="item-sup">
+													Destination
+												</div>
+											</div>
+											<div class="item">
+												<span><i class="fa fa-calendar"></i></span>
+												<input type="date" placeholder="Find a Hotel" />
+												<div class="item-sup">
+													Check- in Check-out
+												</div>
+											</div>
+											<div class="item">
+												<span><i class="fa fa-users"></i></span>
+												<input type="text" placeholder="1 Room 1 Adult" />
+												<div class="item-sup">
+													Occupancy
+												</div>
+											</div>
+											<div class="item">
+												<span><i class="fa fa-search"></i></span>
+												<select>
+													<option value="">Lowest Available Rate</option>
+													<option value="">Promotional Code</option>
+													<option value="">Senior Citizen Rate</option>
+												</select>
+												<div class="item-sup">
+													Special rates
+												</div>
+											</div>
+											<div class="button-container">
+												<button>
+													Search
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="brand-page">
+				<div class="gallery">
+					<div class="container">
+						<div class="main-title">
+							The Gallery
+						</div>
+						<div class="sub-title">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
+							molestiae excepturi,
+						</div>
+						<div class="view-all">
+							<a href="">View All</a>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<div class="img-container">
+									<img
+										src="assets/images/banner.jpg"
+										class="img-fluid"
+										alt=""
+									/>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="img-container">
+									<img
+										src="assets/images/banner.jpg"
+										class="img-fluid"
+										alt=""
+									/>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="img-container">
+									<img
+										src="assets/images/banner.jpg"
+										class="img-fluid"
+										alt=""
+									/>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="img-container">
+									<img
+										src="assets/images/banner.jpg"
+										class="img-fluid"
+										alt=""
+									/>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="img-container">
+									<img
+										src="assets/images/banner.jpg"
+										class="img-fluid"
+										alt=""
+									/>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="img-container">
+									<img
+										src="assets/images/banner.jpg"
+										class="img-fluid"
+										alt=""
+									/>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="img-container">
+									<img
+										src="assets/images/banner.jpg"
+										class="img-fluid"
+										alt=""
+									/>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="img-container">
+									<img
+										src="assets/images/banner.jpg"
+										class="img-fluid"
+										alt=""
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="welcome-brand">
+					<div class="container">
+						<div class="main-title">
+							Welcome
+						</div>
+						<div class="sub-title">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+							suscipit temporibus nam excepturi voluptates. Amet ad elig
+						</div>
+						<div class="welcome-slider-wrapper">
+							<div>
+								<div class="item">
+									<div class="title">
+										Free Wifi
+									</div>
+									<div class="description">
+										Retreat to your personal sanctuary to unwind and recharge.
+										Revive your sense of well-being with our essential bath
+										amenities.
+									</div>
+									<div class="img-container">
+										<img
+											class="img-fluid"
+											src="assets/images/banner.jpg"
+											alt=""
+										/>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="item">
+									<div class="title">
+										Free Parking
+									</div>
+									<div class="description">
+										Retreat to your personal sanctuary to unwind and recharge.
+										Revive your sense of well-being with our essential bath
+										amenities.
+									</div>
+									<div class="img-container">
+										<img
+											class="img-fluid"
+											src="assets/images/banner3.jpg"
+											alt=""
+										/>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="item">
+									<div class="title">
+										AC Room
+									</div>
+									<div class="description">
+										Retreat to your personal sanctuary to unwind and recharge.
+										Revive your sense of well-being with our essential bath
+										amenities.
+									</div>
+									<div class="img-container">
+										<img
+											class="img-fluid"
+											src="assets/images/banner2.jpg"
+											alt=""
+										/>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="item">
+									<div class="title">
+										View Tower
+									</div>
+									<div class="description">
+										Retreat to your personal sanctuary to unwind and recharge.
+										Revive your sense of well-being with our essential bath
+										amenities.
+									</div>
+									<div class="img-container">
+										<img
+											class="img-fluid"
+											src="assets/images/banner3.jpg"
+											alt=""
+										/>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="item">
+									<div class="title">
+										Swimming Pool
+									</div>
+									<div class="description">
+										Retreat to your personal sanctuary to unwind and recharge.
+										Revive your sense of well-being with our essential bath
+										amenities.
+									</div>
+									<div class="img-container">
+										<img
+											class="img-fluid"
+											src="assets/images/banner2.jpg"
+											alt=""
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="experience">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="img-container">
+									<img src="assets/images/banner2.jpg" alt="" />
+								</div>
+							</div>
+							<div class="col-md-5">
+								<div class="main-title">
+									The Experience
+								</div>
+								<div class="description">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam
+									aut vel fugit dolorum incidunt at ducimus porro placeat
+									similique suscipit quas inventore esse, enim ipsam doloremque
+									dolore exercitationem necessitatibus ipsa.Lorem ipsum dolor
+									sit amet, consectetur adipisicing elit. Quam aut vel fugit
+									dolorum incidunt at ducimus porro placeat similique suscipit
+									quas inventore esse, enim ipsam doloremque dolore
+									exercitationem necessitatibus ipsa.
+								</div>
+							</div>
+							<div class="col-md-3 logo-holder">
+								<div class="logo-container">
+									<img src="assets/images/logo1.png" class="img-fluid" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="room">
+					<div class="container">
+						<div class="main-title text-center">
+							Rooms
+						</div>
+						<div class="row">
+							<div class="col-md-3 room-detail">
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Consectetur culpa labore minus libero mollitia et esse,
+									molestiae laboriosam? Recusandae suscipit dicta unde alias
+									earum illum blanditiis, dolorem enim maxime voluptas!
+								</p>
+							</div>
+							<div class="col-md-9">
+                                <div class="room-slider-wrapper">
+                                    <div>
+                                        <div class="room-wrapper">
+                                            <div class="img-container">
+                                                <img
+                                                    src="assets/images/banner.jpg"
+                                                    class="img-fluid"
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <div class="info-wrap">
+                                                <div class="room-name">
+                                                    <div class="title">King Size Poster</div>
+                                                    <div class="logo-container">
+                                                        <img
+                                                            src="assets/images/logo1.png"
+                                                            class="img-fluid"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div class="description">
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                                    Aliquam asperiores dolores similique fuga culpa ipsam,
+                                                    perspiciatis totam eum 
+                                                </div>
+                                                <div class="price-wrap">
+                                                    <span>Price</span>
+                                                    <span class="price">$200</span>
+                                                </div>
+                                                <div class="book-btn">
+                                                    <a href="">Book</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="room-wrapper">
+                                            <div class="img-container">
+                                                <img
+                                                    src="assets/images/banner.jpg"
+                                                    class="img-fluid"
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <div class="info-wrap">
+                                                <div class="room-name">
+                                                    <div class="title">King Size Poster</div>
+                                                    <div class="logo-container">
+                                                        <img
+                                                            src="assets/images/logo1.png"
+                                                            class="img-fluid"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div class="description">
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                                    Aliquam asperiores dolores similique fuga culpa ipsam,
+                                                    perspiciatis totam eum 
+                                                </div>
+                                                <div class="price-wrap">
+                                                    <span>Price</span>
+                                                    <span class="price">$200</span>
+                                                </div>
+                                                <div class="book-btn">
+                                                    <a href="">Book</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="room-wrapper">
+                                            <div class="img-container">
+                                                <img
+                                                    src="assets/images/banner.jpg"
+                                                    class="img-fluid"
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <div class="info-wrap">
+                                                <div class="room-name">
+                                                    <div class="title">King Size Poster</div>
+                                                    <div class="logo-container">
+                                                        <img
+                                                            src="assets/images/logo1.png"
+                                                            class="img-fluid"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div class="description">
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                                    Aliquam asperiores dolores similique fuga culpa ipsam,
+                                                    perspiciatis totam eum 
+                                                </div>
+                                                <div class="price-wrap">
+                                                    <span>Price</span>
+                                                    <span class="price">$200</span>
+                                                </div>
+                                                <div class="book-btn">
+                                                    <a href="">Book</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="room-wrapper">
+                                            <div class="img-container">
+                                                <img
+                                                    src="assets/images/banner.jpg"
+                                                    class="img-fluid"
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <div class="info-wrap">
+                                                <div class="room-name">
+                                                    <div class="title">King Size Poster</div>
+                                                    <div class="logo-container">
+                                                        <img
+                                                            src="assets/images/logo1.png"
+                                                            class="img-fluid"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div class="description">
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                                    Aliquam asperiores dolores similique fuga culpa ipsam,
+                                                    perspiciatis totam eum 
+                                                </div>
+                                                <div class="price-wrap">
+                                                    <span>Price</span>
+                                                    <span class="price">$200</span>
+                                                </div>
+                                                <div class="book-btn">
+                                                    <a href="">Book</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+
+			<div class="top-footer">
+				<div class="container">
+					<div class="item-container">
+						<div class="item-wrapper">
+							<div class="title">
+								Contact 
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="sub-title">
+                                        Hotel Erth Inn
+                                    </div>
+                                    <div class="sub-title">
+                                        Kevin Marshall
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="sub-title">
+                                        Tel: (+123)-232-833434
+                                    </div>
+                                    <div class="sub-title">
+                                        Kevin Marshall
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="sub-title">
+                                        Follow Us On:
+                                    </div>
+                                    <ul class="social-link">
+                                        <li>
+                                            <a href="">
+                                                <i class="fab fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href=""><i class="fab fa-pinterest"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href=""><i class="fab fa-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href=""><i class="fab fa-instagram"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href=""><i class="fab fa-linkedin"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href=""><i class="fab fa-youtube"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="container">
+					<div class="subscribe-container">
+						<div class="item-wrapper">
+							<div class="title">
+								Never miss out on our most popular deals
+							</div>
+							<form action="">
+								<input type="text" placeholder="Your Email" />
+
+								<a href="" class="mybtn">Subscribe</a>
+							</form>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-2 col-md-2">
+							<div class="title">
+								Quick Links
+							</div>
+							<ul>
+								<li><a href="">Best Online Rate Guranteed</a></li>
+								<li>
+									<a href="">
+										Covid-19 update
+									</a>
+								</li>
+								<li><a href="">Destination</a></li>
+								<li><a href="">Gift cards</a></li>
+								<li><a href="">New and Upcomming hotels</a></li>
+								<li><a href="">Aga Hotels App</a></li>
+								<li><a href="">Responsible Business</a></li>
+							</ul>
+						</div>
+
+						<div class="col-md-2 col-lg-2">
+							<div class="title">
+								Travel professionals
+							</div>
+							<ul>
+								<li>
+									<a href="">Partners</a>
+								</li>
+								<li>
+									<a href="">Travel Agents</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-2">
+							<div class="title">
+								Corporate
+							</div>
+							<ul>
+								<li>
+									<a href="">Careers PPHE</a>
+								</li>
+								<li><a href="">Careers RHG</a></li>
+								<li><a href="">Development Opportunities</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2">
+							<div class="title">
+								Legal
+							</div>
+							<ul>
+								<li><a href="">Ad and Cookie policy</a></li>
+								<li><a href="">Digital Millennium copyright Act</a></li>
+								<li><a href="">Legal notice</a></li>
+								<li><a href="">Privacy Policy</a></li>
+								<li><a href="">Site usage agreement</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2">
+							<div class="title">
+								Help
+							</div>
+							<ul>
+								<li>
+									<a href="">
+										Consumer alerts
+									</a>
+								</li>
+								<li><a href="">Contact</a></li>
+								<li><a href="">FAQ</a></li>
+								<li><a href="">Sitemap</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2">
+							<div class="title">
+								Follow us on Social Media
+							</div>
+							<ul class="social-link">
+								<li>
+									<a href="">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href=""><i class="fab fa-pinterest"></i></a>
+								</li>
+								<li>
+									<a href=""><i class="fab fa-twitter"></i></a>
+								</li>
+								<li>
+									<a href=""><i class="fab fa-instagram"></i></a>
+								</li>
+								<li>
+									<a href=""><i class="fab fa-linkedin"></i></a>
+								</li>
+								<li>
+									<a href=""><i class="fab fa-youtube"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		<script src="assets/js/custom.js"></script>
+	</body>
+</html>

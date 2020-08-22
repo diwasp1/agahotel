@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hotel In USA</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+		/>
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+	<body>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+				>&times;</a
+			>
+			<a href="#">Reservation</a>
+			<a href="#">My Booking</a>
+			<a href="#">FAQ</a>
+			<a href="#">Brands</a>
+			<a href="#">Destination</a>
+			<a href="">AGA Meetings</a>
+			<a href="">Deals</a>
+		</div>
+
+		<div id="main">
+			<div class="fixed-navbar">
+				<div class="navbar-wrapper">
+					<div class="primary-navbar container">
+						<div class="logo-container">
+							<img src="assets/images/logo2.png" class="img-fluid" alt="" />
+						</div>
+						<div class="primary-content">
+							<ul class="first-navbar-wrapper">
+								<li>
+									<i class="fa fa-phone"></i>
+									<select name="" id="">
+										<option value="">+1 (415) - 555 2671 </option>
+										<option value="">+1 (415) - 554 2661 </option>
+									</select>
+								</li>
+								<li>
+									<a href="">Bookings</a>
+								</li>
+								<li>
+									<a href="">FAQ</a>
+								</li>
+								<li>
+									<select name="" id="">
+										<option value="">English</option>
+										<option value="">German</option>
+									</select>
+								</li>
+							</ul>
+							<ul class="second-navbar-wrapper">
+								<li>
+									<a href="">
+										Brands
+									</a>
+								</li>
+
+								<li>
+									<a href="">Destination</a>
+								</li>
+								<li>
+									<a href="">
+										Deals
+									</a>
+								</li>
+								<li>
+									<a href="">
+										About
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Rewards
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="bars d-block d-md-none">
+							<span onclick="openNav()"><i class="fa fa-bars"></i></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="search-wrapper" id="searchBar">
+					<div class="container">
+						<div class="bottom-search-bar d-none d-lg-flex">
+							<div class="item">
+								<span><i class="fa fa-search"></i></span>
+								<input type="text" placeholder="Find a Hotel" />
+								<div class="item-sup">
+									Destination
+								</div>
+							</div>
+							<div class="item">
+								<span><i class="fa fa-calendar"></i></span>
+								<input type="date" placeholder="Find a Hotel" />
+								<div class="item-sup">
+									Check- in Check-out
+								</div>
+							</div>
+							<div class="item">
+								<span><i class="fa fa-users"></i></span>
+								<input type="text" placeholder="1 Room 1 Adult" />
+								<div class="item-sup">
+									Occupancy
+								</div>
+							</div>
+							<div class="item">
+								<span><i class="fa fa-search"></i></span>
+								<select>
+									<option value="">Lowest Available Rate</option>
+									<option value="">Promotional Code</option>
+									<option value="">Senior Citizen Rate</option>
+								</select>
+								<div class="item-sup">
+									Special rates
+								</div>
+							</div>
+							<div class="button-container">
+								<button>
+									Search
+								</button>
+							</div>
+						</div>
+						<div
+							class="bottom-search-bar-mobile d-flex d-lg-none"
+							data-toggle="modal"
+							data-target="#myModal"
+						>
+							<span>Where to</span>
+							<span><i class="fa fa-ellipsis-v"></i></span>
+						</div>
+						<div class="modal" id="myModal">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title">Where to</h5>
+										<button type="button" class="close" data-dismiss="modal">
+											&times;
+										</button>
+									</div>
+
+									<div class="modal-body">
+										<div class="bottom-search-bar">
+											<div class="item">
+												<span><i class="fa fa-search"></i></span>
+												<input type="text" placeholder="Find a Hotel" />
+												<div class="item-sup">
+													Destination
+												</div>
+											</div>
+											<div class="item">
+												<span><i class="fa fa-calendar"></i></span>
+												<input type="date" placeholder="Find a Hotel" />
+												<div class="item-sup">
+													Check- in Check-out
+												</div>
+											</div>
+											<div class="item">
+												<span><i class="fa fa-users"></i></span>
+												<input type="text" placeholder="1 Room 1 Adult" />
+												<div class="item-sup">
+													Occupancy
+												</div>
+											</div>
+											<div class="item">
+												<span><i class="fa fa-search"></i></span>
+												<select>
+													<option value="">Lowest Available Rate</option>
+													<option value="">Promotional Code</option>
+													<option value="">Senior Citizen Rate</option>
+												</select>
+												<div class="item-sup">
+													Special rates
+												</div>
+											</div>
+											<div class="button-container">
+												<button>
+													Search
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="room-filter-page">
+					<div class="room-top-bar">
+						<div class="container">
+							<div class="room-top-bar-wrapper">
+								<div class="top-wrapper">
+									<div class="top-title">
+										Park Plaza Westminister Bridge
+									</div>
+
+									<ul>
+										<li>
+											<i class="fa fa-map-marker-alt"></i> 21 west 21 Jump
+											Street, New York
+										</li>
+										<li><i class="fa fa-phone"></i> +1 402 637847</li>
+										<li><i class="fa fa-envelope"></i> info@agahotel.com</li>
+									</ul>
+								</div>
+								<div class="hotel-logo">
+									<img src="assets/images/logo1.png" class="img-fluid" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-4">
+								<div class="room-map">
+									<div class="main-title">
+										<a data-toggle="collapse" data-target="#map">Map View</a>
+									</div>
+									<div id="map" class="collapse">
+										<iframe
+											src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14132.251396159376!2d85.32540588164979!3d27.68445232482068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19bfd910ffe9%3A0x66f431dda92f7629!2sShankhamul%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1596369461517!5m2!1sen!2snp"
+											width="100%"
+											height="300"
+											frameborder="0"
+											style="border: 0;"
+											allowfullscreen=""
+											aria-hidden="false"
+											tabindex="0"
+										></iframe>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-8">
+								<div class="room-item">
+									<div class="room-type">
+										Normal Room
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="img-container">
+												<img
+													src="assets/images/banner.jpg"
+													class="img-fluid"
+													alt=""
+												/>
+											</div>
+										</div>
+
+										<div class="col-md-6">
+											<div class="description">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Quam, nihil, perferendis alias recusandae aliquam aut
+												autem odio distinctio Lorem ipsum dolor sit amet
+												consectetur adipisicing elit. Quam, nihil, perferendis
+												alias recusandae aliquam aut autem odio distinctio qui
+												voluptatibus
+											</div>
+											<div class="readmore-btn">
+												<a href=""
+													>Read More <i class="fa fa-caret-down"></i
+												></a>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="amenities-wrapper">
+												<ul>
+													<li><i class="fa fa-phone"></i></li>
+													<li><i class="fa fa-wifi"></i></li>
+													<li><i class="fa fa-hot-tub"></i></li>
+													<li><i class="fa fa-air-freshener"></i></li>
+												</ul>
+											</div>
+											<div class="other-wrapper">
+												<ul>
+													<li><i class="fa fa-user"></i> Max Guest: 1</li>
+													<li><i class="fa fa-bed"></i> Bed Type: Normal</li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="bed-item">
+												<div class="row">
+													<div class="col-md-7">
+														<div class="bed-qty">
+															Queen Bed (1)
+														</div>
+														<ul>
+															<li>Free Cancellation before July 17, 2020</li>
+															<li>Breakfast Included</li>
+														</ul>
+													</div>
+													<div class="col-md-5">
+														<div class="price">
+															USD 58.90
+														</div>
+														<div class="tenure">
+															per night
+														</div>
+														<div class="select-container">
+															<a href="">Select</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="room-item">
+									<div class="room-type">
+										Normal Room
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="img-container">
+												<img
+													src="assets/images/banner.jpg"
+													class="img-fluid"
+													alt=""
+												/>
+											</div>
+										</div>
+
+										<div class="col-md-6">
+											<div class="description">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Quam, nihil, perferendis alias recusandae aliquam aut
+												autem odio distinctio Lorem ipsum dolor sit amet
+												consectetur adipisicing elit. Quam, nihil, perferendis
+												alias recusandae aliquam aut autem odio distinctio qui
+												voluptatibus
+											</div>
+											<div class="readmore-btn">
+												<a href=""
+													>Read More <i class="fa fa-caret-down"></i
+												></a>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="amenities-wrapper">
+												<ul>
+													<li><i class="fa fa-phone"></i></li>
+													<li><i class="fa fa-wifi"></i></li>
+													<li><i class="fa fa-hot-tub"></i></li>
+													<li><i class="fa fa-air-freshener"></i></li>
+												</ul>
+											</div>
+											<div class="other-wrapper">
+												<ul>
+													<li><i class="fa fa-user"></i> Max Guest: 1</li>
+													<li><i class="fa fa-bed"></i> Bed Type: Normal</li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="bed-item">
+												<div class="row">
+													<div class="col-md-7">
+														<div class="bed-qty">
+															Queen Bed (1)
+														</div>
+														<ul>
+															<li>Free Cancellation before July 17, 2020</li>
+															<li>Breakfast Included</li>
+														</ul>
+													</div>
+													<div class="col-md-5">
+														<div class="price">
+															USD 58.90
+														</div>
+														<div class="tenure">
+															per night
+														</div>
+														<div class="select-container">
+															<a href="">Select</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="room-item">
+									<div class="room-type">
+										Normal Room
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="img-container">
+												<img
+													src="assets/images/banner.jpg"
+													class="img-fluid"
+													alt=""
+												/>
+											</div>
+										</div>
+
+										<div class="col-md-6">
+											<div class="description">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Quam, nihil, perferendis alias recusandae aliquam aut
+												autem odio distinctio Lorem ipsum dolor sit amet
+												consectetur adipisicing elit. Quam, nihil, perferendis
+												alias recusandae aliquam aut autem odio distinctio qui
+												voluptatibus
+											</div>
+											<div class="readmore-btn">
+												<a href=""
+													>Read More <i class="fa fa-caret-down"></i
+												></a>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="amenities-wrapper">
+												<ul>
+													<li><i class="fa fa-phone"></i></li>
+													<li><i class="fa fa-wifi"></i></li>
+													<li><i class="fa fa-hot-tub"></i></li>
+													<li><i class="fa fa-air-freshener"></i></li>
+												</ul>
+											</div>
+											<div class="other-wrapper">
+												<ul>
+													<li><i class="fa fa-user"></i> Max Guest: 1</li>
+													<li><i class="fa fa-bed"></i> Bed Type: Normal</li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="bed-item">
+												<div class="row">
+													<div class="col-md-7">
+														<div class="bed-qty">
+															Queen Bed (1)
+														</div>
+														<ul>
+															<li>Free Cancellation before July 17, 2020</li>
+															<li>Breakfast Included</li>
+														</ul>
+													</div>
+													<div class="col-md-5">
+														<div class="price">
+															USD 58.90
+														</div>
+														<div class="tenure">
+															per night
+														</div>
+														<div class="select-container">
+															<a href="">Select</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="top-footer">
+				<div class="container">
+					<div class="item-container">
+						<div class="item-wrapper">
+							<div class="title">
+								Contact Aga Hotels
+							</div>
+							<div class="button-container">
+								<a href="" class="mybtn">Need Help?</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="container">
+					<div class="subscribe-container">
+						<div class="item-wrapper">
+							<div class="title">
+								Never miss out on our most popular deals
+							</div>
+							<form action="">
+								<input type="text" placeholder="Your Email" />
+
+								<a href="" class="mybtn">Subscribe</a>
+							</form>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-2 col-md-2">
+							<div class="title">
+								Quick Links
+							</div>
+							<ul>
+								<li><a href="">Best Online Rate Guranteed</a></li>
+								<li>
+									<a href="">
+										Covid-19 update
+									</a>
+								</li>
+								<li><a href="">Destination</a></li>
+								<li><a href="">Gift cards</a></li>
+								<li><a href="">New and Upcomming hotels</a></li>
+								<li><a href="">Aga Hotels App</a></li>
+								<li><a href="">Responsible Business</a></li>
+							</ul>
+						</div>
+
+						<div class="col-md-2 col-lg-2">
+							<div class="title">
+								Travel professionals
+							</div>
+							<ul>
+								<li>
+									<a href="">Partners</a>
+								</li>
+								<li>
+									<a href="">Travel Agents</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-2">
+							<div class="title">
+								Corporate
+							</div>
+							<ul>
+								<li>
+									<a href="">Careers PPHE</a>
+								</li>
+								<li><a href="">Careers RHG</a></li>
+								<li><a href="">Development Opportunities</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2">
+							<div class="title">
+								Legal
+							</div>
+							<ul>
+								<li><a href="">Ad and Cookie policy</a></li>
+								<li><a href="">Digital Millennium copyright Act</a></li>
+								<li><a href="">Legal notice</a></li>
+								<li><a href="">Privacy Policy</a></li>
+								<li><a href="">Site usage agreement</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2">
+							<div class="title">
+								Help
+							</div>
+							<ul>
+								<li>
+									<a href="">
+										Consumer alerts
+									</a>
+								</li>
+								<li><a href="">Contact</a></li>
+								<li><a href="">FAQ</a></li>
+								<li><a href="">Sitemap</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2">
+							<div class="title">
+								Follow us on Social Media
+							</div>
+							<ul class="social-link">
+								<li>
+									<a href="">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href=""><i class="fab fa-pinterest"></i></a>
+								</li>
+								<li>
+									<a href=""><i class="fab fa-twitter"></i></a>
+								</li>
+								<li>
+									<a href=""><i class="fab fa-instagram"></i></a>
+								</li>
+								<li>
+									<a href=""><i class="fab fa-linkedin"></i></a>
+								</li>
+								<li>
+									<a href=""><i class="fab fa-youtube"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		<script src="assets/js/custom.js"></script>
+	</body>
+</html>
