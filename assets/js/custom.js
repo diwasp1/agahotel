@@ -173,3 +173,6 @@ function openHotelNav() {
 function closeHotelNav() {
 	document.getElementById("filterSidenav").style.width = "0";
 }
+
+// custom 
+
