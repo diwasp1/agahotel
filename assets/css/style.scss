@@ -1801,16 +1801,31 @@ body {
 			text-align: right;
 			margin-top: 15px;
 			margin-bottom: 15px;
+			margin-right: -3%;
 			a{
-				color: gray;
+				color: black;
 				font-size: 14px;
-				border-radius: 5px;
-			padding: 8px 15px;
+				border-radius: 10px;
+			padding: 7px 22px;
 			border: 1px solid gray;
 			}
 		}
+		.no-gutters{
+			margin-right: 0;
+			margin-left: 0;
+			.col,
+			[class*="col-md-3"],[class*="col-md-6"] {
+			  padding-right: 10px;
+			  padding-left: 0px;
+			
+			}
+			.gallery-lastimg{
+				padding-right: 0px;
+			}
+		}
+		
 		#gallery-col2{
-			height: 430px;
+			height: 410px;
 			img{
 				height: 100%;
 			}
@@ -1821,7 +1836,7 @@ body {
 			}
 		}
 		.img-container{
-			margin: 15px 0px;
+			margin: 5px 0px;
 			height: 200px;
 			img{
 				height: 200px;
@@ -1841,7 +1856,7 @@ body {
 
 		}
 		.slick-next:before, .slick-prev:before{
-color: black;
+			color: black;
 		}
 		.item{
 			padding: 30px;
@@ -1986,6 +2001,19 @@ color: black;
 			}
 		}
 	}
+}
+
+@media (max-width: 768px) {
+	.brand-page {
+		.gallery{ 
+			.no-gutters{
+				.gallery-lastimg-md{
+					padding-right: 0px;
+				}
+			}
+		}
+	}
+	
 }
 
 // aboutus page 

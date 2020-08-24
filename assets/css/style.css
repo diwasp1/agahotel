@@ -2071,18 +2071,34 @@ body {
   text-align: right;
   margin-top: 15px;
   margin-bottom: 15px;
+  margin-right: -3%;
 }
 
 .brand-page .gallery .view-all a {
-  color: gray;
+  color: black;
   font-size: 14px;
-  border-radius: 5px;
-  padding: 8px 15px;
+  border-radius: 10px;
+  padding: 7px 22px;
   border: 1px solid gray;
 }
 
+.brand-page .gallery .no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.brand-page .gallery .no-gutters .col,
+.brand-page .gallery .no-gutters [class*="col-md-3"], .brand-page .gallery .no-gutters [class*="col-md-6"] {
+  padding-right: 10px;
+  padding-left: 0px;
+}
+
+.brand-page .gallery .no-gutters .gallery-lastimg {
+  padding-right: 0px;
+}
+
 .brand-page .gallery #gallery-col2 {
-  height: 430px;
+  height: 410px;
 }
 
 .brand-page .gallery #gallery-col2 img {
@@ -2096,7 +2112,7 @@ body {
 }
 
 .brand-page .gallery .img-container {
-  margin: 15px 0px;
+  margin: 5px 0px;
   height: 200px;
 }
 
@@ -2310,6 +2326,12 @@ body {
 
 .brand-page .room .room-wrapper .book-btn a:hover {
   background: gray;
+}
+
+@media (max-width: 768px) {
+  .brand-page .gallery .no-gutters .gallery-lastimg-md {
+    padding-right: 0px;
+  }
 }
 
 .banner-section .img-container img {
