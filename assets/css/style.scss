@@ -1774,6 +1774,14 @@ body {
 }
 
 // brand page
+
+
+#brandpage-logo{
+	height: 80px;
+	img{
+		height: 100%;
+	}
+}
 .brand-page{
 	margin-top: 60px;
 	
@@ -1801,11 +1809,23 @@ body {
 			border: 1px solid gray;
 			}
 		}
+		#gallery-col2{
+			height: 430px;
+			img{
+				height: 100%;
+			}
+		}
+		#gallery-col3{
+			img{
+				width: max-content;
+			}
+		}
 		.img-container{
 			margin: 15px 0px;
 			height: 200px;
 			img{
 				height: 200px;
+				object-fit: cover;
 			}
 		}
 	}

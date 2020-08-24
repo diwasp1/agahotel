@@ -2040,6 +2040,14 @@ body {
   }
 }
 
+#brandpage-logo {
+  height: 80px;
+}
+
+#brandpage-logo img {
+  height: 100%;
+}
+
 .brand-page {
   margin-top: 60px;
 }
@@ -2073,6 +2081,20 @@ body {
   border: 1px solid gray;
 }
 
+.brand-page .gallery #gallery-col2 {
+  height: 430px;
+}
+
+.brand-page .gallery #gallery-col2 img {
+  height: 100%;
+}
+
+.brand-page .gallery #gallery-col3 img {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
 .brand-page .gallery .img-container {
   margin: 15px 0px;
   height: 200px;
@@ -2080,6 +2102,8 @@ body {
 
 .brand-page .gallery .img-container img {
   height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .brand-page .welcome-brand {
