@@ -1637,6 +1637,8 @@ body {
 		}
 	}
 	.room-map {
+		position: sticky;
+		top: 180px;
 		#map{
 			display: block;
 		}
